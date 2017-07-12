@@ -13,7 +13,7 @@ There are 3 supported algorithms for simulation:
 
 # Modes:
 
-There are 2 mods defined in this program 
+There are 2 modes defined in this program 
 		
 	Default: 
 		in this mode we use a set of 5000 selections from memory and between 1 and 10 frames and the number in each member of set is between 1 and 50 and is created using Uniform Distribution.
