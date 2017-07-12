@@ -1,7 +1,7 @@
 # Page-Replacing-Simulator:
 A simulator which uses the 3 page replacement algorithms LRU , Optimal and Second Chance and calculates page fault for them in a two mods!
 
-This simulator is written in java.
+This simulator is written in java fx.
 
 # Algorithms Used:
 
