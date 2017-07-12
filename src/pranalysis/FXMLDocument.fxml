@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="800" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pranalysis.FXMLDocumentController">
+    <children>
+<!--        <javafx.scene.chart.LineChart prefHeight="100" prefWidth="100" layoutX="10" layoutY="10"  fx:id="chart"   />-->
+        <Button layoutX="700" layoutY="350" text="EXIT" onAction="#handleButtonAction" fx:id="button" />
+        <!--Algorithm Selector-->
+        <RadioButton layoutX="70" layoutY="60"  text="LRU"  fx:id="lruSelect"/>
+        <RadioButton layoutX="70" layoutY="100"  text="OPTIMAL"  fx:id="optimalSelect"/>
+        <RadioButton layoutX="70" layoutY="140"  text="SecondChance"  fx:id="secondChance"/>
+        <!--Run Button-->
+        <Button layoutX="70" layoutY="350" text="RUN" onAction="#handleRunButton" fx:id="runButton" />
+        <!--Phase Selector--> 
+        <Label layoutX="70" layoutY="10" text="Algorithms"  fx:id="algolabel" />
+        <Label layoutX="250" layoutY="10" text="Phase Selection" fx:id="phaselabel" />
+        <RadioButton layoutX="250" layoutY="60"  text="Phase One"  fx:id="phaseOne" onAction="#handlePhaseOne" />
+        <Label layoutX="330" layoutY="100" text="5000 number array created with Uniform Distribution with frames between 1 to 10!"  fx:id="PhaseOneDiscription"  />
+        <RadioButton layoutX="250" layoutY="130"  text="Phase Two"  fx:id="phaseTwo" onAction="#handlePhaseTwo" />
+        <Label layoutX="332" layoutY="190" text="Request Count:" />  
+        <TextField layoutX="417" layoutY="190" text="" prefHeight="20" prefWidth="40" fx:id="requestCount" /> 
+        <Label layoutX="332" layoutY="220" text="Frames number:"  />  
+        <TextField layoutX="417" layoutY="220" text="" prefHeight="20" prefWidth="40" fx:id="PageStart" /> 
+        <Label layoutX="460" layoutY="220" text="to" /> 
+        <TextField layoutX="482" layoutY="220" text="" prefHeight="20" prefWidth="40" fx:id="PageEnd" /> 
+        <Label layoutX="332" layoutY="250" text="Mean:" />  
+        <TextField layoutX="417" layoutY="250" text="" prefHeight="20" prefWidth="40" fx:id="Mean" /> 
+        <Label layoutX="332" layoutY="280" text="Variance:"  />  
+        <TextField layoutX="417" layoutY="280" text="" prefHeight="20" prefWidth="40" fx:id="Variance" /> 
+        <!--Warning bar-->
+        <Label layoutX="270" layoutY="360" text="" fx:id="warningBar" /> 
+        <!--chart-->
+        <!--<javafx.scene.chart.LineChart fx:id="linechart" layoutX="29.0" layoutY="194.0" prefHeight="416.0" prefWidth="1222.0" title="Temperature of session" />-->
+<!--              <xAxis>
+               
+              </xAxis>
+              <yAxis>                
+              </yAxis>
+          </LineChartjavafx.scene.chart.LineChart>-->
+    </children>
+</AnchorPane>
